@@ -104,8 +104,8 @@ const schema = a.schema({
     character_likness: a.boolean()
   }),
 
-  // Main Submission model
-  Submission: a.model({
+  // Main Digital Download Submission model
+  DigitalDownloadSubmission: a.model({
     submission_id: a.id(),
     timestamp: a.timestamp(),
     form_timing: a.ref('FormTiming'),
@@ -120,8 +120,8 @@ const schema = a.schema({
     newsletter_subscription: a.boolean()
   }).authorization(allow => [allow.publicApiKey()]),
   
-  // UK-specific Submission model   
-  UKSubmission: a.model({
+  // UK-specific Digital Download Submission model
+  UKDigitalDownloadSubmission: a.model({
     submission_id: a.id(),
     timestamp: a.timestamp(),
     form_timing: a.ref('FormTiming'),

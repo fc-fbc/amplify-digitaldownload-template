@@ -380,15 +380,7 @@ export function FilmSearchInput({
       {/* Helper Text */}
       {!isSelected && (
         <p className="mt-2 text-sm text-gray-500">
-          Only Special Permission titles are available to order here. For more information, visit{' '}
-          <a
-            href="https://www.filmbankmedia.com/moratorium-and-special-permissions/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-600 hover:text-blue-800 underline"
-          >
-            Moratorium &amp; Special Permissions
-          </a>.
+          Only Digital Download titles are available to search here.
         </p>
       )}
     </div>

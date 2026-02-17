@@ -40,7 +40,7 @@ export async function GET(request: NextRequest) {
           ExpressionAttributeValues: {
             ':catalogVal': 'CATALOG',
             ':q': qNorm,
-            ':mediaType': 'SPECIAL_PERMISSION',
+            ':mediaType': 'DIGITAL_DOWNLOAD',
           },
           Limit: 50,
         })

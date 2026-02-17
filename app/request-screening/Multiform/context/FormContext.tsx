@@ -756,7 +756,7 @@ export const FormProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
           submissionData.finance_info = sanitizedFinanceInfo;
 
           // Submit the data to the UK-specific table
-          const result = await client.models.UKSubmission.create(submissionData);
+          const result = await client.models.UKDigitalDownloadSubmission.create(submissionData);
 
           // Check if result contains any error indicators
           if (!result || (result as any).errors) {

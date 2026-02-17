@@ -27,7 +27,7 @@ export function useScreeningData(submissionId: string, screeningId: string | nul
     const fetchSubmission = async () => {
       try {
         // Fetching submission data
-        const response = await client.models.Submission.get({ id: submissionId })
+        const response = await client.models.DigitalDownloadSubmission.get({ id: submissionId })
         
         if (response?.data) {
           // Submission data retrieved successfully
@@ -114,7 +114,7 @@ export function useScreeningData(submissionId: string, screeningId: string | nul
     }
 
     fetchSubmission()
-  }, [submissionId, screeningId, client.models.Submission, currentScreeningId])
+  }, [submissionId, screeningId, client.models.DigitalDownloadSubmission, currentScreeningId])
 
   const handleTicketSoldChange = (ticketIndex: number, value: string) => {
     const numValue = parseInt(value) || 0;
@@ -164,7 +164,7 @@ export function useScreeningData(submissionId: string, screeningId: string | nul
         return;
       }
       
-      const result = await client.models.Submission.update({
+      const result = await client.models.DigitalDownloadSubmission.update({
         id: submissionId,
         film_screenings: {
           ...submissionData.film_screenings,
