@@ -1,0 +1,395 @@
+export const en = {
+  // Common
+  "common": {
+    "yes": "Yes",
+    "no": "No",
+    "required": "Required",
+    "optional": "Optional",
+    "previous": "Previous Step",
+    "next": "Next Step",
+    "review": "Review",
+    "submit": "Submit Request",
+    "submitting": "Submitting...",
+    "search": "Search",
+    "clear": "Clear",
+    "select": "Add",
+    "pleaseSpecify": "Please specify",
+    "capacityAndEvent": "Capacity and Event Details",
+  },
+
+  "header": {
+    "title": "Screening Request",
+  },
+
+  // Privacy
+  "privacy": {
+    "consentText": "I agree to the processing of my personal data in accordance with the privacy policy.",
+    "readPolicy": "Please read our",
+    "policyLink": "data privacy policy"
+  },
+
+  // Form Fields
+  "form": {
+    // Contact Information
+    "contactInfo": {
+      "title": "Contact Information",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "companyName": "Company Name",
+      "stslAccountNumber": "STSL Account Reference No.",
+      "stslAccountInfo": "If you do not have an STSL account please register",
+      "here": "here",
+      "isRegisteredCompany": "Is this a registered company?",
+      "companyRegistrationNumber": "Please provide your company registration number",
+      "isVatRegistered": "Is the company VAT registered?",
+      "vatNumber": "Please provide your VAT number",
+      "email": "Email",
+      "phone": "Phone",
+      "financeEmail": "Finance Email",
+      "financePhone": "Finance Contact Number",
+      "address": "Please enter your billing address.",
+      "street1": "Street Address Line 1",
+      "street2": "Street Address Line 2",
+      "city": "City",
+      "state": "State/Province",
+      "postalCode": "Postal Code",
+      "country": "Country",
+      "countries": {
+        "uk": "United Kingdom",
+        "germany": "Germany",
+        "austria": "Austria",
+        "switzerland": "Switzerland"
+      },
+      "contactPerson": "Contact Person ", 
+    },
+
+    // Screening Details
+    "screeningDetails": {
+      "title": "Venue Information",
+      "screeningType": "Is your screening indoors, outdoors, or a drive-in?",
+      "screeningAddress": "Screening Venue Address",
+      "useSameAddress": "Is the screening at the same address as your billing address?",
+      "venue": "Type of venue",
+      "venueInfo": "Please enter the type of venue where the screening will take place (e.g., museum, park, theater, community center).",
+      "eventWebsite": "Website of the event",
+      "format": "What is the planned screening format?",
+      "theatricalVenue": "You may be classified as a theatrical venue, which could make you ineligible for a licence. If you’d still like to proceed, please continue completing the form and submit it. Our team will be in touch.",
+      "dcp35mmCapability": "Does your venue have the ability to screen films in either Digital Cinema Package (DCP) format or 35mm film?",
+      "screenSize": "Screen size (please provide width and height in metres)",
+      "screenSizeSimple": "Screen size (width and height in metres)",
+      "width": "Width",
+      "height": "Height",
+      "meters": "m",
+      "indoors": "Indoors",
+      "outdoors": "Outdoors",
+      "driveIn": "Drive In",
+      "formatOwnDVD": "User-owned DVD",
+      "formatOwnBluray": "User-owned Blu-ray",
+      "formatDownload": "Filmbankmedia Download (Depending on availablity) £10 + VAT",
+      "formatDVD": "DVD (£14 + VAT Delivery Fee)",
+      "formatBluRay": "Blu-ray (£14 + VAT Delivery Fee)",
+
+      //alt. screening format options
+      "formatOwnCopy": "User-owned copy",
+      "rentACopy": "Rent a Copy",
+      "formatFBMDownload": "Filmbankmedia Download",
+      "vsr": "Virtual Screening Room (VSR)",
+
+      "subjectToAvail": "Subject to Availability",
+      "additionalFees": "Additional fees apply",
+      "alreadyOwn": "You already own this film.",
+
+      "priceRentCopy": "£14 + VAT",
+      "fbmDownloadPrice": "£10 + VAT",
+
+      "dcp35mmCapabilityInfo": "This refers to the venue's ability to screen films in either Digital Cinema Package (DCP) format, the standard for digital theatrical projection, or 35mm film, a traditional analog format.",
+      "theatricalRelease": "Do you screen films released within the 12 weeks theatrical cinema release window?",
+      "hasEventWebsite": "Does your event have a website?",
+    },
+
+    // Venue Types
+    "venueTypes": {
+      "filmClubs": "Film Clubs/Societies",
+      "mobileCinema": "Mobile Cinema/Independent/Community cinema",
+      "schools": "Schools/Universities",
+      "artCentres": "Art Centres/Village Halls/Community Centre",
+      "council": "Council",
+      "library": "Library",
+      "gallery": "Gallery/Museum/Observatory/Cultural Centre/Visitor Centre",
+      "restaurants": "Restaurants and Bars",
+      "hotel": "Hotel",
+      "privateVenue": "Private Venue hire",
+      "park": "Park/Garden/NationalTrust/HeritageTrust/Castles",
+      "publicSquares": "Public squares/Residential/commercial developments",
+      "retail": "Retail/Shopping centre/Store/Garden Centre",
+      "theatre": "Theatre/Auditorium/ConcertHall",
+      "corporate": "Corporate",
+      "social": "Social",
+      "worship": "Places of Worship",
+      "charity": "Charity/Support centres",
+      "bookshop": "Bookshop",
+      "festivals": "Festivals/Marches/Events",
+      "outdoors": "Outdoors",
+      "other": "Other",
+      "selectVenueType": "Select venue type...",
+      "specifyVenueType": "Please specify venue type...",
+      "searchVenues": "Search venues...",
+      "noVenuesFound": "No venues found",
+    },
+
+    // Capacity and Event Details
+    "capacityAndEvent": {
+      "title": "Capacity and Event Details",
+      "steptitle": "Event Details",
+      "infobuttonmaxcapacity": "Please confirm the capacity stated on your Temporary Event Notice (TEN), which can be applied for at",
+      "maxLegalCapacity": "What is the maximum legal capacity of the screening venue?",
+      "expectedAudience": "What is the expected audience size?",
+      "promotionInfobutton": "For example: social media, newsletters, websites, etc.",
+      "isPromoted": "Are you promoting your screening?",
+      "promotionMethods": "Please select your promotion methods",
+      "promotionSocialMedia": "Social Media",
+      "promotionNewsletter": "Newsletter",
+      "promotionWebsite": "Website",
+      "promotionPrint": "Print Media",
+      "promotionRadio": "Radio",
+      "promotionTV": "TV",
+      "communicationResponsible": "Please share which organization(s) are handling communication and public relations for the event?",
+      "thirdPartyAdvertising": "Will there be any branding, third-party advertising, sponsorship, or promotional activities associated with your screening, even if not directly related to the film?",
+      "eventSummary": "Please provide a full summary of the event and what it involves.",
+      "evemtSummarySubtitle": "Please include any activities relating to the film’s brand and characters.",  
+      "summary": "Summary",
+      "brandActivities": "Are there any activities related to the branding and characters in this film?",
+      "relatedBrandActivities": "Please describe any activities related to the branding and characters in this film?",
+      "involvedParties": "Please share all involved parties.",
+      "addpartyname": "Add Party Name",
+      "audienceParticipationExample": "For example: sing-along or interactive elements",
+    },
+
+    // Interactive Elements
+    "interactiveElements": {
+      "title": "Confirmation Statements",
+      "fullLengthFilm": "Do you intend to screen the film in its entirety? ",
+      "audienceParticipation": "Will the screening include audience participation?",
+      "livePerformance": "Will there be a live performance?",
+      "hasTheme": " Will the screening involve any theming or themed elements?",
+      "themeInfoButton": "For example: playing a Halloween-themed film and creating a theme using elements from the movie to be used during the screening.",
+      "specialEffects": "Will the Screening involve any Special Effects?",
+      "characterLikness": "Will the Screening involve any character likeness?",
+    },
+
+    // Film Screenings
+    "filmScreenings": {
+      "title": "Film Screenings",
+      "description": "Please provide details about the films you want to screen. You must enter at least one film.",
+      "chargingTickets": "Charging Tickets",
+      "chargingTicketsQuestion": "Are you charging an entry fee for the screening?",
+      "film": "Film",
+      "filmTitle": "Film Title",
+      "yearOfRelease": "Year of Release",
+      "screenings": "Screenings",
+      "screening": "Screening",
+      "addScreening": "Add Screening",
+      "screeningDate": "Screening Date",
+      "numberOfScreenings": "Number of Screenings",
+      "ticketTypes": "Ticket Types",
+      "addTicketType": "Add Ticket Type",
+      "ticketInfo": "Ticket Information",
+      "ticketType": "Ticket Type",
+      "selectTicketType": "Select ticket type",
+      "ticketPrice": "Price £ (incl. VAT)",
+      "enterPrice": "Enter price",
+      "ticketTypeAdult": "Adult",
+      "ticketTypeChild": "Child",
+      "ticketTypeSenior": "Senior",
+      "ticketTypePremium": "Premium",
+      "ticketTypeStudent": "Student",
+      "ticketTypeOther": "Other",
+      "addAnotherFilm": "Add Another Film",
+      "multipleScreeningsInfo": "Add multiple screenings if you are showing the same film, on the same day, at the same price multiple times.",
+      "enterCustomType": "Enter Custom Ticket Type",
+      "moreDetails": "More details",
+    },
+
+    // Feedback
+    "feedback": {
+      "title": "Additional Information",
+      "howDidYouHear": "How did you hear about us?",
+      "search": "Search engine (Google, Yahoo, etc.)",
+      "social": "Social media post",
+      "filmStudio": "Film Studio Referral",
+      "linkedin": "LinkedIn ad",
+      "facebook": "Facebook ad",
+      "wordOfMouth": "Recommendations / Word of mouth",
+      "preferNotToSay": "Prefer not to Say",
+      "other": "Other",
+      "newsletter": "Would you like to receive our newsletter with curated films & seasonal recommendations?",
+    },
+
+    // Review
+    "review": {
+      "title": "Review Your Information",
+      "steptitle" : "Review",
+      "requestAnotherScreening": "Request Another Screening",
+      "companyNumber": "Company Registration Number",
+      "vatNumber": "VAT number",
+      "address": "Billing Address",
+      "screeningType": "Screening Type",
+      "format": "Screening Format",
+      "dcp35mmCapability": "DCP/35mm screening capability",
+      "maxLegalCapacity": "Maximum Legal Capacity",
+      "expectedAudience": "Expected Audience Size",
+      "promotion": "Promoting your screening",
+      "promotionMethods": "Promotion Methods",
+      "communicationResponsible": "Organization(s) handling communication and public relations",
+      "thirdPartyAdvertising": "Branding, third-party advertising, sponsorship, or promotional activities associated with your screening",
+      "involvedParties": "Involved parties",
+      "eventSummary": "Event summary",
+      "brandActivities": "Brand/ character related activities",
+      "relatedBrandActivities": "Brand/ character related activities description",
+      "newsletter": "Newsletter opt-in",
+      "showMore": "Show more",
+      "showLess": "Show less",
+      "theatricalRelease": "Theatrical Release Window",
+    },
+
+    "confirmation": {
+      "title": "Confirmation",
+      "submissionStatus": "Submission Status",
+      "submissionSuccessful": "Submission Successful!",
+      "requestSubmitted": "Your screening request has been successfully submitted.",
+      "referenceId": "Reference ID:",
+      "submissionDate": "Submission Date:",
+      "thankYouMessage": "Thank you for submitting the form! We'll be in touch soon. For any questions, contact us at info@filmbankmedia.com.",
+      "submissionFailed": "Submission Failed",
+      "errorSubmitting": "There was an error submitting your screening request.",
+      "error": "Error:",
+      "tryAgainLater": "Please contact our support team if you experience this error: info@filmbankmedia.com",
+      "redirecting": "Redirecting...",
+      "loading": "Loading..."
+    },
+  },
+
+  // Placeholders
+  "placeholders": {
+    "https": "https://",
+    "pleaseSpecify": "Please specify",
+  },
+
+  // Validation Messages
+  "validation": {
+    "required": "This field is required",
+    "email": "Please enter a valid email address",
+    "url": "Please enter a valid URL",
+    "number": "Please enter a valid number",
+    "minLength": "Please enter at least {min} characters",
+    "maxLength": "Please enter no more than {max} characters",
+    "min": "Please enter a value greater than or equal to {min}",
+    "max": "Please enter a value less than or equal to {max}",
+    "pattern": "Please enter a valid format",
+    "match": "Fields do not match",
+    "invalid": "Please enter a valid value",
+    "positive": "Please enter a positive number",
+    "ticketCharge": "Please indicate whether you are charging tickets",
+    "atLeastOneFilm": "At least one film is required",
+    "atLeastOneFilmWithTitle": "At least one film with a title is required",
+    "filmTitleRequired": "Film title is required",
+    "yearRequired": "Year of release is required",
+    "atLeastOneTicketType": "At least one ticket type is required",
+    "selectTicketType": "Please select a ticket type",
+    "ticketPriceRequired": "Ticket price must be greater than 0",
+    "customTicketTypeRequired": "Custom ticket type is required",
+    "screeningDateRequired": "Screening date is required",
+    "atLeastOneScreeningRequired": "At least one screening is required",
+    "ticketPriceExceedsMax": "Ticket price cannot exceed 1,000,000",
+    "ticketTypeExists": "Ticket type \"{value}\" already exists",
+    "customTicketTypeExists": "Custom ticket type \"{customType}\" already exists",
+    "maxFilmsExceeded": "Maximum number of films ({max}) exceeded",
+    "maxScreeningsExceeded": "Maximum number of screenings ({max}) exceeded",
+    "maxPartiesExceeded": "Maximum number of involved parties ({max}) exceeded",
+    "partyExists": "Party \"{party}\" already exists",
+    "maxTicketsExceeded": "Maximum number of tickets ({max}) exceeded",
+    
+    // Step2 validators
+    "selectScreeningType": "Please select a screening type",
+    "streetRequired": "Street address is required",
+    "cityRequired": "City is required",
+    "stateRequired": "State/Province/Region is required",
+    "postalCodeRequired": "Postal/ZIP code is required",
+    "countryRequired": "Country is required",
+    "venueRequired": "Venue is required",
+    "validUrl": "Please enter a valid URL (e.g., example.com or https://example.com)",
+    "formatRequired": "Format is required",
+    "screenLengthPositive": "Screen height must be greater than 0",
+    "screenWidthPositive": "Screen width must be greater than 0",
+    "screeningDetailsRequired": "Screening details are required",
+    "websiteSelectionRequired": "Please indicate whether your event has a website",
+    "websiteRequired": "Website URL is required",
+  },
+
+  
+  // Modal dialogs for confirmation statements
+  "confirmationModals": {
+    "fullLengthFilm": {
+      "title": "Full-Length Screening Required",
+      "description": "We cannot license you if you are not screening the whole film. The film must be played in its entirety without breaks, pauses, intermissions or intervals.",
+      "playFilmInFull": "Play film in full",
+      "cancelBooking": "Cancel booking & clear form"
+    },
+    "audienceParticipation": {
+      "title": "Audience Participation Information",
+      "description": "Audience participation connected to the film is not permitted. This includes, but not limited to, the use of actors, dress up. Sing-along is only permitted if licensing sing-along version of film which can be found using this link - ",
+      "whatWouldYouLikeToDo": "What would you like to do?",
+      "continueWithout": "Continue without audience participation"
+    },
+    "livePerformance": {
+      "title": "Live Performance Information",
+      "description": "Live performances accompanying the screening is not permitted. This includes, but not limited to, musical performances, dramatic reenactments, choreographed routines, or other staged presentations.",
+      "whatWouldYouLikeToDo": "What would you like to do?",
+      "continueWithout": "Continue without live performance"
+    },
+    "themedScreening": {
+      "title": "Themed Screening Information",
+      "description": "Themed activities are not permitted. We cannot licence you to create a themed immersive experience centred around the film. This includes the use of featured characters, scene re-enactment and live music performances.",
+      "whatWouldYouLikeToDo": "What would you like to do?",
+      "continueWithout": "Continue without themed elements"
+    },
+    "specialEffects": {
+      "title": "Special Effects Information",
+      "description": "Special effects which alter and/or enhance the film is not permitted. This includes, but not limited to, atmospheric effects, interactive elements, or any technical enhancements that modify the film.",
+      "whatWouldYouLikeToDo": "What would you like to do?",
+      "continueWithout": "Continue without special effects"
+    },
+    "characterLikeness": {
+      "title": "Character Likeness Information",
+      "description": "Character likenesses from the film is not permitted. This includes, but not limited to, costumed performers, cardboard cutouts, promotional materials, decorations, or any visual representations that depict or reference characters.",
+      "whatWouldYouLikeToDo": "What would you like to do?",
+      "continueWithout": "Continue without character likeness"
+    },
+    "theatricalRelease": {
+      "title": "Theatrical Release Warning",
+      "description": "You may be classified as a theatrical venue, which could make you ineligible for a licence. If you’d still like to proceed, please continue completing the form and submit it. Our team will be in touch.",
+    },
+    "dcpCapability": {
+      "title": "DCP/35mm Capability Warning",
+      "description": "You may be classified as a theatrical venue, which could make you ineligible for a licence. If you’d still like to proceed, please continue completing the form and submit it. Our team will be in touch.",
+      "continue": "Continue the form",
+      "goBack": "Go back",
+    },
+    "confirmation": {
+      "title": "Are you sure?",
+      "description": "You'll lose all progress on your booking.",
+      "confirmCancel": "Yes, cancel and clear form",
+      "goBack": "No, go back",
+      "whatWouldYouLikeToDo": "What would you like to do?",
+      "continueWithout": "Continue without the above"
+  },
+    "legal_text": {
+      "title": "Legal Confirmation",
+      "submissionConfirmation": "By submitting this request, you confirm that all information provided is truthful and accurate to the best of your knowledge. ",
+      "legalCopy": "Please be aware that providing false information will invalidate your licence and may result in non-compliance with the Copyright, Designs and Patents Act 1988.",
+      "confirmAccurate": "I confirm all information is accurate",
+      "goBackAndReview": "Go back and review"
+    }
+},
+
+};
