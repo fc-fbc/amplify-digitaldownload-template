@@ -39,6 +39,7 @@ export const en = {
       "stslAccountNumber": "STSL Account Reference No.",
       "stslAccountInfo": "If you do not have an STSL account please register",
       "stslUserName": "Download User Name",
+      "stslUserNameInfo": "If you have used this service before, please provide the username you would like to use for this download screening",
       "here": "here",
       "isRegisteredCompany": "Is this a registered company?",
       "companyRegistrationNumber": "Please provide your company registration number",

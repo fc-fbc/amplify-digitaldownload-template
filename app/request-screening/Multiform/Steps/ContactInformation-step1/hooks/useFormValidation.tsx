@@ -57,14 +57,8 @@ export const useFormValidation = () => {
         } else {
           setErrors((prev) => ({ ...prev, stsl_account_number: "" }))
         }
-      } else if (name === 'stsl_user_name') {
-        if (!value.trim()) {
-          setErrors((prev) => ({ ...prev, stsl_user_name: getValidationMessage('required', locale) }))
-        } else {
-          setErrors((prev) => ({ ...prev, stsl_user_name: "" }))
-        }
       } else {
-        // No validation needed for other finance fields as they are optional
+        // No validation needed for other finance fields as they are optional (including stsl_user_name)
         setErrors((prev) => ({ ...prev, [name]: "" }))
       }
 

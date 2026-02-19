@@ -98,8 +98,11 @@ export const CompanyInfo = ({
         {/* Second row - STSL User Name */}
         <div className="w-1/2">
           <Label htmlFor="stsl_user_name" className="text-lg">
-            {t('form.contactInfo.stslUserName')} <span className="text-red-500">*</span>
+            {t('form.contactInfo.stslUserName')}
           </Label>
+          <p className="text-sm text-gray-600 mt-1">
+            {t('form.contactInfo.stslUserNameInfo')}
+          </p>
         </div>
 
         {/* Second row input */}
@@ -115,7 +118,6 @@ export const CompanyInfo = ({
                 ? "border-red-500 focus:border-red-500 focus:ring-red-500"
                 : "focus:border-[#0288d1]"
             }`}
-            required
           />
           {stslUserNameError && <p className="text-red-500 text-sm mt-1">{stslUserNameError}</p>}
         </div>
