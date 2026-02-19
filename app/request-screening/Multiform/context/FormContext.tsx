@@ -77,7 +77,8 @@ const INITIAL_FORM_DATA: FormData = {
   finance_details: {
     // finance_phone: "",
     // finance_email: "",
-    stsl_account_number: ""
+    stsl_account_number: "",
+    stsl_user_name: ""
   },
   
   // Screening Details
@@ -561,12 +562,9 @@ export const FormProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
 
           // Sanitize all text fields to prevent overflow
           const sanitizedContactInfo = {
-            ...newFormData.contact_info,
             first_name: sanitizeText(newFormData.contact_info.first_name, MAX_TEXT_LENGTH),
             last_name: sanitizeText(newFormData.contact_info.last_name, MAX_TEXT_LENGTH),
             company_name: sanitizeText(newFormData.contact_info.company_name, MAX_TEXT_LENGTH),
-            // company_registration_number: sanitizeText(newFormData.contact_info.company_registration_number, MAX_TEXT_LENGTH),
-            // vat_number: sanitizeText(newFormData.contact_info.vat_number, MAX_TEXT_LENGTH),
             address: {
               street_1: sanitizeText(newFormData.contact_info.address.street_1, MAX_TEXT_LENGTH),
               street_2: sanitizeText(newFormData.contact_info.address.street_2, MAX_TEXT_LENGTH),
@@ -583,7 +581,8 @@ export const FormProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
           const sanitizedFinanceInfo = {
             // finance_phone: formattedFinancePhone,
             // finance_email: sanitizeText(newFormData.finance_details?.finance_email || '', MAX_TEXT_LENGTH),
-            stsl_account_number: sanitizeText(newFormData.finance_details?.stsl_account_number || '', MAX_TEXT_LENGTH)
+            stsl_account_number: sanitizeText(newFormData.finance_details?.stsl_account_number || '', MAX_TEXT_LENGTH),
+            stsl_user_name: sanitizeText(newFormData.finance_details?.stsl_user_name || '', MAX_TEXT_LENGTH)
           };
           
           // Venue option keys that map to translation keys

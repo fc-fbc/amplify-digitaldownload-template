@@ -236,6 +236,12 @@ export default function ReviewStep() {
                 <p className="mt-1 text-gray-800">{formData.finance_details.stsl_account_number}</p>
               </div>
             )}
+            {formData.finance_details?.stsl_user_name && (
+              <div className="bg-white p-3 rounded-md border border-gray-200 shadow-sm">
+                <p className="font-semibold text-[#0288d1] text-sm tracking-wide">{t('form.contactInfo.stslUserName')}</p>
+                <p className="mt-1 text-gray-800">{formData.finance_details.stsl_user_name}</p>
+              </div>
+            )}
             {formData.finance_details?.finance_email && (
               <div className="bg-white p-3 rounded-md border border-gray-200 shadow-sm">
                 <p className="font-semibold text-[#0288d1] text-sm tracking-wide">{t('form.contactInfo.financeEmail')}</p>

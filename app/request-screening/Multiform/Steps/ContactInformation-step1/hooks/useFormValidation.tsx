@@ -38,10 +38,10 @@ export const useFormValidation = () => {
     const { name, value } = e.target
     let updatedData: FormData;
     
-    if (name === 'stsl_account_number' || name === 'finance_email' || name === 'finance_phone') {
+    if (name === 'stsl_account_number' || name === 'stsl_user_name' || name === 'finance_email' || name === 'finance_phone') {
       // Initialize finance_details if it doesn't exist
       const finance_details = localFormData.finance_details || {};
-      
+
       updatedData = {
         ...localFormData,
         finance_details: {
@@ -49,19 +49,25 @@ export const useFormValidation = () => {
           [name]: value
         }
       };
-      
-      // Validate STSL account number field
+
+      // Validate required finance fields
       if (name === 'stsl_account_number') {
         if (!value.trim()) {
           setErrors((prev) => ({ ...prev, stsl_account_number: getValidationMessage('required', locale) }))
         } else {
           setErrors((prev) => ({ ...prev, stsl_account_number: "" }))
         }
+      } else if (name === 'stsl_user_name') {
+        if (!value.trim()) {
+          setErrors((prev) => ({ ...prev, stsl_user_name: getValidationMessage('required', locale) }))
+        } else {
+          setErrors((prev) => ({ ...prev, stsl_user_name: "" }))
+        }
       } else {
         // No validation needed for other finance fields as they are optional
         setErrors((prev) => ({ ...prev, [name]: "" }))
       }
-      
+
       // Log for debugging
       console.log(`Updated finance_details (${name}):`, updatedData.finance_details);
     } else if (name.startsWith('address.')) {

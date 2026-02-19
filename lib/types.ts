@@ -44,6 +44,7 @@ export interface FinanceDetails{
   finance_phone?: string,
   finance_email?: string,
   stsl_account_number?: string,
+  stsl_user_name?: string
 }
 export interface Capacity {
   max_legal_capacity: number;

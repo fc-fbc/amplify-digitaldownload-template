@@ -38,6 +38,7 @@ export const de = {
       "companyName": "Name des Unternehmens/der Organisation",
       "stslAccountNumber": "STSL-Kontonummer",
       "stslAccountInfo": "Wenn Sie kein STSL-Konto haben, registrieren Sie sich bitte",
+      "stslUserName": "STSL-Kontobenutzername",
       "here": "hier",
       "isRegisteredCompany": "Sind Sie als Unternehmen registriert?",
       "companyRegistrationNumber": "Bitte geben Sie Ihre Unternehmensregisternummer an",

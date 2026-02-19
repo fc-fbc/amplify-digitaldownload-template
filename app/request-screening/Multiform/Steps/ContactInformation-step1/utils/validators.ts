@@ -271,6 +271,11 @@ export const validateForm = (
     errors.stsl_account_number = getValidationMessage('required', locale);
   }
 
+  // Validate STSL user name if finance_details exists
+  if (formData.finance_details && !formData.finance_details.stsl_user_name) {
+    errors.stsl_user_name = getValidationMessage('required', locale);
+  }
+
   // Validate privacy consent
   if (!formData.privacyConsent) {
     errors.privacyConsent = getValidationMessage('required', locale)

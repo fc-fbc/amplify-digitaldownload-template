@@ -38,6 +38,7 @@ export const en = {
       "companyName": "Company Name",
       "stslAccountNumber": "STSL Account Reference No.",
       "stslAccountInfo": "If you do not have an STSL account please register",
+      "stslUserName": "Download User Name",
       "here": "here",
       "isRegisteredCompany": "Is this a registered company?",
       "companyRegistrationNumber": "Please provide your company registration number",

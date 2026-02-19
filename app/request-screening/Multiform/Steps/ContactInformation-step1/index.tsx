@@ -66,14 +66,12 @@ export default function Step1() {
       <CompanyInfo
         companyName={formData.contact_info.company_name}
         stslAccountNumber={formData.finance_details?.stsl_account_number || ""}
-        // isRegisteredCompany={formData.contact_info.is_registered_company}
-        // companyRegistrationNumber={formData.contact_info.company_registration_number}
-        // isVatRegistered={formData.contact_info.is_vat_registered}
-        // vatNumber={formData.contact_info.vat_number}
+        stslUserName={formData.finance_details?.stsl_user_name || ""}
         onInputChange={handleInputChange}
         onRadioChange={handleRadioChange}
         companyNameError={errors.company_name}
         stslAccountNumberError={errors.stsl_account_number}
+        stslUserNameError={errors.stsl_user_name}
         companyRegistrationNumberError={errors.company_registration_number}
         vatNumberError={errors.vat_number}
       />

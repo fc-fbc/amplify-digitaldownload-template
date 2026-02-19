@@ -26,7 +26,8 @@ const schema = a.schema({
   }),
 
   FinanceInfo: a.customType({
-    stsl_account_number: a.string()
+    stsl_account_number: a.string(),
+    stsl_user_name: a.string(),
   }),
 
   ScreenSize: a.customType({

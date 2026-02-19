@@ -8,6 +8,7 @@ import { MAX_TEXT_LENGTH } from "../utils/validators"
 interface CompanyInfoProps {
   companyName: string
   stslAccountNumber: string
+  stslUserName: string
   // isRegisteredCompany: boolean
   // companyRegistrationNumber: string
   // isVatRegistered: boolean
@@ -16,6 +17,7 @@ interface CompanyInfoProps {
   onRadioChange: (name: string, value: any) => void
   companyNameError?: string
   stslAccountNumberError?: string
+  stslUserNameError?: string
   companyRegistrationNumberError?: string
   vatNumberError?: string
 }
@@ -23,6 +25,7 @@ interface CompanyInfoProps {
 export const CompanyInfo = ({
   companyName,
   stslAccountNumber,
+  stslUserName,
   // isRegisteredCompany,
   // companyRegistrationNumber,
   // isVatRegistered,
@@ -31,6 +34,7 @@ export const CompanyInfo = ({
   onRadioChange,
   companyNameError,
   stslAccountNumberError,
+  stslUserNameError,
   companyRegistrationNumberError,
   vatNumberError
 }: CompanyInfoProps) => {
@@ -38,26 +42,24 @@ export const CompanyInfo = ({
   return (
     <>
       <div className="space-y-4">
-        {/* Labels row */}
+        {/* First row - Company Name and STSL Account Number */}
         <div className="flex flex-row gap-4">
-          <div className="w-1/2 flex items-end">
+          <div className="w-1/2">
             <Label htmlFor="business" className="text-lg">
               {t('form.contactInfo.companyName')} <span className="text-red-500">*</span>
             </Label>
           </div>
           <div className="w-1/2">
-            <div>
-              <Label htmlFor="stsl_account_number" className="text-lg">
-                {t('form.contactInfo.stslAccountNumber')} <span className="text-red-500">*</span>
-              </Label>
-              <p className="text-sm text-gray-600 mt-1">
-                {t('form.contactInfo.stslAccountInfo')} <a href="https://imaccs.filmbankmedia.com/imaccs/?customer_type=S" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">{t('form.contactInfo.here')}</a>
-              </p>
-            </div>
+            <Label htmlFor="stsl_account_number" className="text-lg">
+              {t('form.contactInfo.stslAccountNumber')} <span className="text-red-500">*</span>
+            </Label>
+            <p className="text-sm text-gray-600 mt-1">
+              {t('form.contactInfo.stslAccountInfo')} <a href="https://imaccs.filmbankmedia.com/imaccs/?customer_type=S" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">{t('form.contactInfo.here')}</a>
+            </p>
           </div>
         </div>
-        
-        {/* Input fields row */}
+
+        {/* First row inputs */}
         <div className="flex flex-row gap-4">
           <div className="w-1/2">
             <Input
@@ -67,8 +69,8 @@ export const CompanyInfo = ({
               onChange={onInputChange}
               maxLength={160}
               className={`border-[#81D4FA] focus:ring-[#0288d1] ${
-                companyNameError 
-                  ? "border-red-500 focus:border-red-500 focus:ring-red-500" 
+                companyNameError
+                  ? "border-red-500 focus:border-red-500 focus:ring-red-500"
                   : "focus:border-[#0288d1]"
               }`}
               required
@@ -83,8 +85,8 @@ export const CompanyInfo = ({
               onChange={onInputChange}
               maxLength={40}
               className={`border-[#81D4FA] focus:ring-[#0288d1] ${
-                stslAccountNumberError 
-                  ? "border-red-500 focus:border-red-500 focus:ring-red-500" 
+                stslAccountNumberError
+                  ? "border-red-500 focus:border-red-500 focus:ring-red-500"
                   : "focus:border-[#0288d1]"
               }`}
               required
@@ -92,8 +94,35 @@ export const CompanyInfo = ({
             {stslAccountNumberError && <p className="text-red-500 text-sm mt-1">{stslAccountNumberError}</p>}
           </div>
         </div>
+
+        {/* Second row - STSL User Name */}
+        <div className="w-1/2">
+          <Label htmlFor="stsl_user_name" className="text-lg">
+            {t('form.contactInfo.stslUserName')} <span className="text-red-500">*</span>
+          </Label>
+        </div>
+
+        {/* Second row input */}
+        <div className="w-1/2">
+          <Input
+            id="stsl_user_name"
+            name="stsl_user_name"
+            value={stslUserName}
+            onChange={onInputChange}
+            maxLength={160}
+            className={`border-[#81D4FA] focus:ring-[#0288d1] ${
+              stslUserNameError
+                ? "border-red-500 focus:border-red-500 focus:ring-red-500"
+                : "focus:border-[#0288d1]"
+            }`}
+            required
+          />
+          {stslUserNameError && <p className="text-red-500 text-sm mt-1">{stslUserNameError}</p>}
+        </div>
       </div>
 
+
+      
       {/* <div className="space-y-4">
         <Label className="text-lg">{t('form.contactInfo.isRegisteredCompany')} <span className="text-red-500">*</span></Label>
         <RadioGroup
